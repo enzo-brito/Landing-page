@@ -4,128 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sua descrição aqui...">
-    <title>Landing Page Fitness</title>
+    <title>Cabide de Luxo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><b><a href="#about">Sobre Nós</a></b></li>
-                    <li><b><a href="#featured-products">Produtos em Destaque</a></b></li>
-                    <li><b><a href="#contact">Contato</a></b></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><b><a href="#sobre-nos">Sobre nós</a></b></li>
+                <li><b><a href="#produtos">Produtos</a></b></li>
+                <li><b><a href="#novidade">Novidade</a></b></li>
+                <li><b><a href="#contato">Contato</a></b></li>
+            </ul>
+        </nav>
+        <h1>Encontre as últimas tendências em roupas fitness para mulheres</h1>
     </header>
 
-    <section id="hero">
-        <div class="container"> 
-            <img src="img/logo.jpeg" alt="Logo da Sua Marca" class="logo">
-            <h2>Cabide de Luxo</h2>
-            <p id="p1">Encontre as últimas tendências em roupas fitness para mulheres.</p>
-            <a href="https://wa.me/558681524834" class="btn btn-primary">Compre pelo WhatsApp</a>
-        </div>
+    <section id="main-logo">
+        <img src="img/logo.jpeg" alt="Cabide de Luxo">
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Um pequeno texto sobre sua marca e sua abordagem para roupas fitness.</p>
-        </div>
+    <section>
+        <button onclick="encaminharWhatsApp()">Compre pelo WhatsApp</button>
     </section>
 
-    <section id="featured-products">
-        <div class="container">
-            <h2>Produtos em Destaque</h2>
-            <!-- Carrossel de produtos -->
-            <div class="product-carousel">
-                <div class="product-card">
-                    <img src="img/produto1.jpg" alt="Produto 1 - Shorts Rosa">
-                    <h3>Nome do Produto 1</h3>
-                    <p>Descrição breve do produto.</p>
-                    <span class="price">$XX,XX</span>
-                </div>
-                <div class="product-card">
-                    <img src="img/produto2.jpg" alt="Produto 2 - Top Fitness Rosa">
-                    <h3>Nome do Produto 2</h3>
-                    <p>Descrição breve do produto.</p>
-                    <span class="price">$XX,XX</span>
-                </div>
-                <div class="product-card">
-                    <img src="img/produto3.jpg" alt="Produto 3 - Top Fitness Rosa">
-                    <h3>Nome do Produto 3</h3>
-                    <p>Descrição breve do produto.</p>
-                    <span class="price">$XX,XX</span>
-                </div>
-                <div class="product-card">
-                    <img src="img/produto4.jpg" alt="Produto 4 - Top Fitness Rosa">
-                    <h3>Nome do Produto 4</h3>
-                    <p>Descrição breve do produto.</p>
-                    <span class="price">$XX,XX</span>
-                </div>
-                <div class="product-card">
-                    <img src="img/produto5.jpg" alt="Produto 5 - Top Fitness Rosa">
-                    <h3>Nome do Produto 5</h3>
-                    <p>Descrição breve do produto.</p>
-                    <span class="price">$XX,XX</span>
-                </div>
-                <div class="product-card">
-                    <img src="img/produto6.jpg" alt="Produto 6 - Top Fitness Rosa">
-                    <h3>Nome do Produto 6</h3>
-                    <p>Descrição breve do produto.</p>
-                    <span class="price">$XX,XX</span>
-                </div>
+    <section id="sobre-nos">
+        <h2>Sobre nós</h2>
+        <p>Na Cabide de Luxo, combinamos estilo e performance para elevar seu treino. Descubra nossas peças feitas para quem vive em movimento.</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="glide" id="produtos-carousel">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="img/prod2.jpeg" alt="Macacão gringa">
+                        <h3>Macacão gringa</h3>
+                        <p class="preco">R$$$</p>
+                        <p>Disponível em outras cores</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="img/prod3.jpeg" alt="Conjunto Bia">
+                        <h3>Conjunto Bia</h3>
+                        <p class="preco">R$$$$</p>
+                        <p>Disponível em outras cores</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="img/prod4.jpeg" alt="Conjunto short-saia">
+                        <h3>Conjunto short-saia</h3>
+                        <p class="preco">R$$$</p>
+                        <p>Disponível em outras cores</p>
+                    </li>
+                </ul>
             </div>
+
         </div>
     </section>
 
-    <section id="new-arrivals">
-        <div class="container">
-            <h2>Novidades</h2>
-            <!-- Lista de novos produtos -->
-            <div class="product-card">
-                <img src="img/produto3.jpg" alt="Produto 3 - Calça Fitness Rosa">
-                <h3>Nome do Produto 3</h3>
-                <p>Descrição breve do produto.</p>
-                <span class="price">$XX,XX</span>
-            </div>
-            <!-- Adicione mais cards de produtos conforme necessário -->
-        </div>
+
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações</p>
+        <button onclick="encaminharWhatsApp()">Abrir WhatsApp</button>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para mais informações.</p>
-            <a href="https://wa.me/558681524834" class="btn btn-primary" id="btn1">Abrir WhatsApp</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Enzo Brito. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.product-carousel').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            });
-        });
-    </script>
-    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

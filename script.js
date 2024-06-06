@@ -1,25 +1,57 @@
-// Scripts para interatividade
-document.addEventListener('DOMContentLoaded', function() {
-    // Formulário de contato
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      // Aqui você pode adicionar código para enviar o formulário (usando fetch, AJAX, etc.)
-      // Exemplo simples de validação:
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-  
-      if (name && email && message) {
-        // Aqui você poderia enviar os dados para o backend
-        console.log('Nome:', name);
-        console.log('Email:', email);
-        console.log('Mensagem:', message);
-        alert('Formulário enviado com sucesso!');
-        form.reset();
-      } else {
-        alert('Por favor, preencha todos os campos.');
-      }
-    });
-  });
-  
+document.addEventListener('DOMContentLoaded', () => {
+    const glideProdutos = new Glide('#produtos-carousel', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        focusAt: 'center',
+        gap: 20,
+        autoplay: 3000,
+        animationDuration: 800,
+        animationTimingFunc: 'ease-in-out',
+        breakpoints: {
+            768: {
+                perView: 1,
+                gap: 10
+            }
+        }
+    }).mount();
+
+    const glideNovidade = new Glide('#novidade-carousel', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        focusAt: 'center',
+        gap: 20,
+        autoplay: 3000,
+        animationDuration: 800,
+        animationTimingFunc: 'ease-in-out',
+        breakpoints: {
+            768: {
+                perView: 1,
+                gap: 10
+            }
+        }
+    }).mount();
+
+    function addActiveClass(glide, glideId) {
+        glide.on(['mount.after', 'run'], () => {
+            const slides = document.querySelectorAll(`${glideId} .glide__slide`);
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('glide__slide--active', index === glide.index);
+            });
+        });
+    }
+
+    addActiveClass(glideProdutos, '#produtos-carousel');
+    addActiveClass(glideNovidade, '#novidade-carousel');
+});
+function encaminharWhatsApp() {
+    var numeroTelefone = "558681524834";
+    var mensagem = "Olá, vim pelo seu site. Poderia me enviar o catálogo?";
+    
+    mensagem = encodeURIComponent(mensagem);
+    
+    var url = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + mensagem;
+    
+    window.open(url);
+}
