@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cabide de Luxo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><b><a href="#sobre-nos">Sobre nós</a></b></li>
-                <li><b><a href="#produtos">Produtos</a></b></li>
-                <li><b><a href="#novidade">Novidade</a></b></li>
-                <li><b><a href="#contato">Contato</a></b></li>
-            </ul>
-        </nav>
-        <h1>Encontre as últimas tendências em roupas fitness para mulheres</h1>
+      <nav>
+        <ul>
+          <li>
+            <b><a href="#sobre-nos">Sobre nós</a></b>
+          </li>
+          <li>
+            <b><a href="#produtos">Produtos</a></b>
+          </li>
+          <li>
+            <b><a href="#novidade">Novidade</a></b>
+          </li>
+          <li>
+            <b><a href="#contato">Contato</a></b>
+          </li>
+        </ul>
+      </nav>
+      <h1>Encontre as últimas tendências em roupas fitness para mulheres</h1>
     </header>
 
     <section id="main-logo">
-        <img src="img/logo.jpeg" alt="Cabide de Luxo">
+      <img src="img/logo.jpeg" alt="Cabide de Luxo" />
     </section>
 
     <section>
-        <button onclick="encaminharWhatsApp()">Compre pelo WhatsApp</button>
+      <button onclick="encaminharWhatsApp()">Compre pelo WhatsApp</button>
     </section>
 
     <section id="sobre-nos">
-        <h2>Sobre nós</h2>
-        <p>Na Cabide de Luxo, combinamos estilo e performance para elevar seu treino. Descubra nossas peças feitas para quem vive em movimento.</p>
+      <h2>Sobre nós</h2>
+      <p><b>
+        Na Cabide de Luxo, combinamos estilo e performance para elevar seu
+        treino. Descubra nossas peças feitas para quem vive em movimento.
+      </p></b>
     </section>
 
     <section id="produtos">
-        <h2>Produtos</h2>
-        <div class="glide" id="produtos-carousel">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <img src="img/prod2.jpeg" alt="Macacão gringa">
-                        <h3>Macacão gringa</h3>
-                        <p class="preco">R$$$</p>
-                        <p>Disponível em outras cores</p>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="img/prod3.jpeg" alt="Conjunto Bia">
-                        <h3>Conjunto Bia</h3>
-                        <p class="preco">R$$$$</p>
-                        <p>Disponível em outras cores</p>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="img/prod4.jpeg" alt="Conjunto short-saia">
-                        <h3>Conjunto short-saia</h3>
-                        <p class="preco">R$$$</p>
-                        <p>Disponível em outras cores</p>
-                    </li>
-                </ul>
-            </div>
-
+      <h2>Produtos</h2>
+      <div class="glide" id="produtos-carousel">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="img/prod2.jpeg" alt="Macacão gringa" />
+              <h3>Macacão gringa</h3>
+              <p class="preco">R$$$</p>
+              <p>Disponível em outras cores</p>
+            </li>
+            <li class="glide__slide">
+              <img src="img/prod3.jpeg" alt="Conjunto Bia" />
+              <h3>Conjunto Bia</h3>
+              <p class="preco">R$$$$</p>
+              <p>Disponível em outras cores</p>
+            </li>
+            <li class="glide__slide">
+              <img src="img/prod4.jpeg" alt="Conjunto short-saia" />
+              <h3>Conjunto short-saia</h3>
+              <p class="preco">R$$$</p>
+              <p>Disponível em outras cores</p>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
-
-
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações</p>
-        <button onclick="encaminharWhatsApp()">Abrir WhatsApp</button>
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para mais informações</p>
+      <button onclick="encaminharWhatsApp()">Abrir WhatsApp</button>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

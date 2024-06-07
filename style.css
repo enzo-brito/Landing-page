@@ -1,137 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
+  font-family: Cormorant Garamond;
+  background-color: white;
 }
 
 header {
-    background-color: #ff007f;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #ff007f;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 header h1 {
-    font-size: 40px;
-    margin-top: 10px;
-    font-family: Dancing Script;
-
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 section {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 #main-logo img {
-    width: 350px;
-    margin-top: 20px;
+  width: 350px;
+  margin-top: 20px;
 }
 
 button {
-    background-color: #ff007f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 50px;
-
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 50px;
 }
 #sobre-nos {
-    background-color: #ff007f; /* Cor de fundo rosa */
+  background-color: #ff007f; /* Cor de fundo rosa */
+}
+#sobre-nos p {
+  font-family: Cormorant Garamond;
+  font-size: medium;
 }
 
 h2 {
-    color: #ff007f;
-    font-size: 18px;
-    margin-bottom: 10px;
+  color: #ff007f;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 p {
-    margin: 10px 0;
-    font-size: 14px;
-
+  margin: 10px 0;
+  font-size: 14px;
 }
 #sobre-nos p {
-    color: white;
-    
+  color: white;
 }
-#sobre-nos h2{
-    color: white;
+#sobre-nos h2 {
+  color: white;
 }
 
 .glide__slide {
-    padding: 10px;
-    background-color: #ff007f;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.5s ease-in-out;
+  padding: 10px;
+  background-color: #ff007f;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
 }
 
 .glide__slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 #contato button {
-    background-color: #ff007f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 50px;
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 50px;
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        align-items: center;
-    }
+  nav ul {
+    align-items: center;
+  }
 
-    .glide__arrows {
-        top: 60%;
-    }
-    #main-logo img {
-        width: 250px;
-        margin-top: 20px;
-    }
-    header h1 {
-        font-size: 20px;
-        margin-top: 10px;
-        font-family: Dancing Script;
-    
-    }
+  .glide__arrows {
+    top: 60%;
+  }
+  #main-logo img {
+    width: 250px;
+    margin-top: 20px;
+  }
+  header h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Cormorant Garamond;
+  }
 }
 
 .glide__slide--active {
-    transform: scale(1.0);
+  transform: scale(1);
 }
